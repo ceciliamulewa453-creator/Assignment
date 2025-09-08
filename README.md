@@ -28,13 +28,6 @@ Check out the live registration form [here](https://ceciliamulewa453-creator.git
   <meta charset="UTF-8" />
   <title>Registration Form</title>
 
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->o=jquery&logoColor=white
 ```html
 <!DOCTYPE html>
 <html lang="en">
