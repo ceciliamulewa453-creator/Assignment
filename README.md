@@ -18,167 +18,12 @@ The form gathers:
 ## File Structure
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top">
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Registration Form</title>
-</head>
-<body>
 
-  <h1>Registration Form</h1>
-
-  <form action="#" method="post">
-
-    <!-- Personal Information Section -->
-    <div role="group" aria-labelledby="personal-info-label">
-      <h2 id="personal-info-label">Personal Information</h2>
-
-      <p>
-        <label for="title">Title</label><br />
-        <select id="title" name="title">
-          <option value="">Select your title</option>
-          <option value="mr">Mr</option>
-          <option value="mrs">Mrs</option>
-          <option value="miss">Miss</option>
-          <option value="dr">Dr</option>
-          <option value="prof">Prof</option>
-        </select>
-      </p>
-
-      <p>
-        <label for="firstName">First Name</label><br />
-        <input type="text" id="firstName" name="firstName" />
-      </p>
-
-      <p>
-        <label for="middleName">Middle Name</label><br />
-        <input type="text" id="middleName" name="middleName" />
-      </p>
-
-      <p>
-        <label for="lastName">Last Name</label><br />
-        <input type="text" id="lastName" name="lastName" />
-      </p>
-
-      <p>
-        <label for="dob">Date of Birth</label><br />
-        <input type="text" id="dob" name="dob" placeholder="MM/DD/YYYY" />
-      </p>
-
-      <p>
-        <label>Gender</label><br />
-        <input type="radio" id="genderMale" name="gender" value="male" />
-        <label for="genderMale">Male</label>
-
-        <input type="radio" id="genderFemale" name="gender" value="female" />
-        <label for="genderFemale">Female</label>
-
-        <input type="radio" id="genderOther" name="gender" value="other" />
-        <label for="genderOther">Other</label>
-      </p>
-    </div>
-
-    <!-- Contact Information Section -->
-    <div role="group" aria-labelledby="contact-info-label">
-      <h2 id="contact-info-label">Contact Information</h2>
-
-      <p>
-        <label for="email">Email Address</label><br />
-        <input type="text" id="email" name="email" />
-      </p>
-
-      <p>
-        <label for="phone">Phone Number</label><br />
-        <input type="text" id="phone" name="phone" />
-      </p>
-
-      <p>
-        <label for="altPhone">Alternate Phone Number</label><br />
-        <input type="text" id="altPhone" name="altPhone" />
-      </p>
-    </div>
-
-    <!-- Address Section -->
-    <div role="group" aria-labelledby="address-label">
-      <h2 id="address-label">Address</h2>
-
-      <p>
-        <label for="address1">Address Line 1</label><br />
-        <input type="text" id="address1" name="address1" />
-      </p>
-
-      <p>
-        <label for="address2">Address Line 2</label><br />
-        <input type="text" id="address2" name="address2" />
-      </p>
-
-      <p>
-        <label for="city">City</label><br />
-        <input type="text" id="city" name="city" />
-      </p>
-
-      <p>
-        <label for="state">State / Province / Region</label><br />
-        <input type="text" id="state" name="state" />
-      </p>
-
-      <p>
-        <label for="postalCode">Postal / Zip Code</label><br />
-        <input type="text" id="postalCode" name="postalCode" />
-      </p>
-
-      <p>
-        <label for="country">Country</label><br />
-        <select id="country" name="country">
-          <option value="">Select your country</option>
-          <option value="india">India</option>
-          <option value="usa">United States</option>
-          <option value="uk">United Kingdom</option>
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="other">Other</option>
-        </select>
-      </p>
-    </div>
-
-    <!-- Preferences Section -->
-    <div role="group" aria-labelledby="preferences-label">
-      <h2 id="preferences-label">Preferences</h2>
-
-      <p>
-        <label for="newsletter">Subscribe to newsletter?</label>
-        <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
-      </p>
-
-      <p>
-        <label for="contactMethod">Preferred Contact Method</label><br />
-        <select id="contactMethod" name="contactMethod">
-          <option value="">Select an option</option>
-          <option value="email">Email</option>
-          <option value="phone">Phone</option>
-          <option value="sms">SMS</option>
-        </select>
-      </p>
-    </div>
-
-    <p>
-      <input type="submit" value="Submit" />
-    </p>
-
-  </form>
-
-</body>
-</html>
-</a>
-<!--
-https://yourusername.github.io/your-repo-name/
-
-
-
-
-<!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
@@ -186,4 +31,110 @@ https://yourusername.github.io/your-repo-name/
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->o=jquery&logoColor=white
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Form</title>
+</head>
+<body>
+  <form action="#" method="post" novalidate>
+    <div role="group" aria-labelledby="personal-info-label">
+      <h2 id="personal-info-label">Personal Information</h2>
+      <p>
+        <label for="title">Title:</label>
+        <select id="title" name="title" required>
+          <option value="">Select</option>
+          <option value="mr">Mr</option>
+          <option value="mrs">Mrs</option>
+          <option value="ms">Ms</option>
+          <option value="dr">Dr</option>
+        </select>
+      </p>
+      <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </p>
+      <p>
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD" required />
+      </p>
+      <p>
+        Gender:<br />
+        <input type="radio" id="genderMale" name="gender" value="male" />
+        <label for="genderMale">Male</label><br />
+        <input type="radio" id="genderFemale" name="gender" value="female" />
+        <label for="genderFemale">Female</label><br />
+        <input type="radio" id="genderOther" name="gender" value="other" />
+        <label for="genderOther">Other</label>
+      </p>
+    </div>
+
+    <div role="group" aria-labelledby="contact-info-label">
+      <h2 id="contact-info-label">Contact Information</h2>
+      <p>
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" required />
+      </p>
+      <p>
+        <label for="phoneMobile">Mobile Phone:</label>
+        <input type="text" id="phoneMobile" name="phoneMobile" />
+      </p>
+      <p>
+        <label for="phoneHome">Home Phone:</label>
+        <input type="text" id="phoneHome" name="phoneHome" />
+      </p>
+    </div>
+
+    <div role="group" aria-labelledby="address-label">
+      <h2 id="address-label">Address</h2>
+      <p>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" />
+      </p>
+      <p>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+      </p>
+      <p>
+        <label for="state">State/Province:</label>
+        <input type="text" id="state" name="state" />
+      </p>
+      <p>
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" />
+      </p>
+      <p>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" />
+      </p>
+    </div>
+
+    <div role="group" aria-labelledby="preferences-label">
+      <h2 id="preferences-label">Preferences</h2>
+      <p>
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label>
+      </p>
+      <p>
+        <label for="contactMethod">Preferred Contact Method:</label>
+        <select id="contactMethod" name="contactMethod">
+          <option value="email">Email</option>
+          <option value="sms">SMS</option>
+          <option value="phone">Phone</option>
+        </select>
+      </p>
+    </div>
+
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+</body>
+</html>
 
