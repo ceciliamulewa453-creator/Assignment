@@ -15,6 +15,10 @@ The form gathers:
 - **Address:** Street address, city, state, postal code, and country.
 - **Preferences:** Newsletter subscription and preferred contact method.
 
+## Live Demo
+
+Check out the live registration form [here](https://yourusername.github.io/registration-form/).
+
 ## File Structure
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
@@ -137,4 +141,5 @@ The form gathers:
   </form>
 </body>
 </html>
+
 
