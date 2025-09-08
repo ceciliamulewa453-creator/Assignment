@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <form action="#" method="post" novalidate>
+    <div role="group" aria-labelledby="personal-info-label">
+      <h2 id="personal-info-label">Personal Information</h2>
+      <p>
+        <label for="title">Title:</label>
+        <select id="title" name="title" required>
+          <option value="">Select</option>
+          <option value="mr">Mr</option>
+          <option value="mrs">Mrs</option>
+          <option value="ms">Ms</option>
+          <option value="dr">Dr</option>
+        </select>
+      </p>
+      <p>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </p>
+      <p>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </p>
+      <p>
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD" required />
+      </p>
+      <p>
+        Gender:<br />
+        <input type="radio" id="genderMale" name="gender" value="male" />
+        <label for="genderMale">Male</label><br />
+        <input type="radio" id="genderFemale" name="gender" value="female" />
+        <label for="genderFemale">Female</label><br />
+        <input type="radio" id="genderOther" name="gender" value="other" />
+        <label for="genderOther">Other</label>
+      </p>
+    </div>
+
+    <div role="group" aria-labelledby="contact-info-label">
+      <h2 id="contact-info-label">Contact Information</h2>
+      <p>
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" required />
+      </p>
+      <p>
+        <label for="phoneMobile">Mobile Phone:</label>
+        <input type="text" id="phoneMobile" name="phoneMobile" />
+      </p>
+      <p>
+        <label for="phoneHome">Home Phone:</label>
+        <input type="text" id="phoneHome" name="phoneHome" />
+      </p>
+    </div>
+
+    <div role="group" aria-labelledby="address-label">
+      <h2 id="address-label">Address</h2>
+      <p>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address" />
+      </p>
+      <p>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+      </p>
+      <p>
+        <label for="state">State/Province:</label>
+        <input type="text" id="state" name="state" />
+      </p>
+      <p>
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" />
+      </p>
+      <p>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" />
+      </p>
+    </div>
+
+    <div role="group" aria-labelledby="preferences-label">
+      <h2 id="preferences-label">Preferences</h2>
+      <p>
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label>
+      </p>
+      <p>
+        <label for="contactMethod">Preferred Contact Method:</label>
+        <select id="contactMethod" name="contactMethod">
+          <option value="email">Email</option>
+          <option value="sms">SMS</option>
+          <option value="phone">Phone</option>
+        </select>
+      </p>
+    </div>
+
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+</body>
+</html>
